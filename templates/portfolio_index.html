@@ -1,0 +1,9 @@
+<!-- Created by Instant Zero (http://www.instant-zero.com) -->
+<{if $welcomeMsg != ''}>
+	<div align='center'><{$welcomeMsg}></div>
+	<br />
+<{/if}>
+
+<{if $effectMethod == 'dfg1'}>			<{* Df Gallery v1 *}>
+	<{include file="db:portfolio_df1.html"}>
+<{/if}>

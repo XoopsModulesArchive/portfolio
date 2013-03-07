@@ -1,0 +1,21 @@
+<div>
+	<div id='dfGallery'></div> 
+</div>
+<script type="text/javascript">
+	jQuery().ready(function() {
+		jQuery('#dfGallery').flash({
+			swf: '<{$smarty.const.PORTFOLIO_URL}>dfgallery1/gallery.swf',
+			hasVersion: 7,
+			height: '<{$galleryHeight}>',
+			width : '<{$galleryWidth}>',
+			flashvars: {
+				quality: 'best',
+				scale: 'noScale',
+				width: '<{$galleryWidth}>',
+				height: '<{$galleryHeight}>',
+				allowFullScreen: 'true',
+				xmlFile: '<{$smarty.const.PORTFOLIO_URL}>ajax.php'			
+			}
+		});
+	});
+</script>
